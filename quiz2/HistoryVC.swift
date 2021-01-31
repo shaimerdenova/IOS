@@ -1,32 +1,30 @@
 //
 //  HistoryVC.swift
-//  quiz2
+//  Quiz2
 //
 //  Created by Admin on 31.01.2021.
+//  Copyright © 2021 akhil. All rights reserved.
 //
 
 import UIKit
 
-class HistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var attempts = ["1", "2", "3", "4", "5"]
-    @IBOutlet weak var myTableView: UITableView!
+class HistoryVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title="History"
-    
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return attempts.count
 
+        // Do any additional setup after loading the view.
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        as! MyTableViewCell
-        cell.myLbl.text = attempts[indexPath.row]
-        return cell
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected row is ", indexPath.row)
-    }
+    */
+
 }

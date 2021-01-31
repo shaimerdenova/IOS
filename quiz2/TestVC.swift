@@ -1,3 +1,11 @@
+//
+//  TestVC.swift
+//  Quiz2
+//
+//  Created by Admin on 31.01.2021.
+//  Copyright © 2021 akhil. All rights reserved.
+//
+
 import UIKit
 
 struct Question {
